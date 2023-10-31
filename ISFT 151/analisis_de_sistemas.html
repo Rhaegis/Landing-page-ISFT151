@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ISFT 151</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #6c757d;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            /* Cambia el color del texto a blanco */
+        }
+    </style>
+</head>
+
+
+<body style="padding-top: 100px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <img src="img/new_logo.png" alt="ISFT 151" width="200" height="80">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
+                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                <li class="nav-item"><a class="nav-link" href="centro_estudiantes.html">Centro de Estudiantes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-5">
+        <h1 class="mb-4">Tecnicatura Superior en Análisis de Sistemas</h1>
+
+        <h2 class="mb-3">¡Bienvenido al Futuro de la Tecnología!</h2>
+
+        <h3>Descripción General</h3>
+        <p>La Carrera de Análisis de Sistemas te sumergirá en el emocionante mundo de la tecnología y la resolución de
+            problemas. Aprenderás a diseñar, desarrollar e implementar soluciones innovadoras para los desafíos
+            tecnológicos del mundo actual.</p>
+
+        <h3>¿Qué Puedes Esperar?</h3>
+        <ul>
+            <li><strong>Formación Integral:</strong> Desde los fundamentos de la programación hasta las metodologías
+                ágiles y la gestión de proyectos, nuestra carrera te proporciona una educación completa en el campo del
+                análisis de sistemas.</li>
+            <li><strong>Profesores Expertos:</strong> Nuestro cuerpo docente está compuesto por profesionales con una
+                amplia experiencia en la industria, asegurando una educación de alta calidad y relevante.</li>
+            <li><strong>Proyectos Prácticos:</strong> A lo largo de tu formación, trabajarás en proyectos reales, desde
+                la conceptualización hasta la implementación, lo que te brindará experiencia práctica y habilidades
+                aplicables en el mundo laboral.</li>
+            <li><strong>Enfoque en Innovación:</strong> Te mantendrás actualizado con las últimas tendencias
+                tecnológicas, incluyendo Inteligencia Artificial, Blockchain, Internet de las Cosas y más.</li>
+        </ul>
+
+        <h3>Destrezas Adquiridas</h3>
+        <p>Al completar la Carrera de Análisis de Sistemas, habrás adquirido habilidades en:</p>
+        <ul>
+            <li><strong>Desarrollo de Software:</strong> Dominarás múltiples lenguajes de programación y herramientas
+                esenciales para la creación de aplicaciones y sistemas.</li>
+            <li><strong>Diseño de Sistemas:</strong> Aprenderás a analizar requisitos y diseñar soluciones tecnológicas
+                escalables y eficientes.</li>
+            <li><strong>Gestión de Proyectos:</strong> Adquirirás habilidades para liderar equipos y gestionar proyectos
+                de desarrollo de software.</li>
+            <li><strong>Resolución de Problemas:</strong> Desarrollarás la capacidad de abordar desafíos complejos y
+                encontrar soluciones efectivas.</li>
+        </ul>
+
+        <h3>Perspectivas Laborales</h3>
+        <p>Los graduados de la Carrera de Análisis de Sistemas están altamente demandados en diversos sectores,
+            incluyendo:</p>
+        <ul>
+            <li>Empresas de Desarrollo de Software</li>
+            <li>Consultoría Tecnológica</li>
+            <li>Departamentos de TI en Empresas</li>
+            <li>Startups Tecnológicas</li>
+            <li>Industrias de Finanzas y Salud</li>
+        </ul>
+
+        <h3>Requisitos de Admisión</h3>
+        <ul>
+            <li>Diploma de Educación Secundaria o equivalente.</li>
+            <li>Pasión por la tecnología y la resolución de problemas.</li>
+            <li>Curiosidad y disposición para aprender y adaptarse.</li>
+        </ul>
+    </div>
+
+    <!--Acordeon-->
+    <div class="container">
+        <div class="accordion" id="accordionYears">
+            <!-- Año 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseYear1" aria-expanded="false">
+                        Año 1
+                    </button>
+                </h2>
+                <div id="collapseYear1" class="accordion-collapse collapse" data-bs-parent="#accordionYears">
+                    <div class="accordion-body">
+                        <!-- Lista de materias para el año 1 -->
+                        <h4>Campo General</h4>
+                        <ul id="materias_General_A1"></ul>
+                        <h4>Campo del Fundamento</h4>
+                        <ul id="materias_Fundamento_A1"></ul>
+                        <h4>Campo Técnico Específico</h4>
+                        <ul id="materias_Tecnico_A1"></ul>
+                        <h4>Campo de la Práctica</h4>
+                        <ul id="materias_Practica_A1"></ul>
+                        <h5 id="totalHoras_A1"></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Año 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseYear2" aria-expanded="false">
+                        Año 2
+                    </button>
+                </h2>
+                <div id="collapseYear2" class="accordion-collapse collapse" data-bs-parent="#accordionYears">
+                    <div class="accordion-body">
+                        <!-- Lista de materias para el año 2 -->
+                        <h4>Campo General</h4>
+                        <ul id="materias_General_A2"></ul>
+                        <h4>Campo del Fundamento</h4>
+                        <ul id="materias_Fundamento_A2"></ul>
+                        <h4>Campo Técnico Específico</h4>
+                        <ul id="materias_Tecnico_A2"></ul>
+                        <h4>Campo de la Práctica</h4>
+                        <ul id="materias_Practica_A2"></ul>
+                        <h5 id="totalHoras_A2"></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Año 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseYear3" aria-expanded="false">
+                        Año 3
+                    </button>
+                </h2>
+                <div id="collapseYear3" class="accordion-collapse collapse" data-bs-parent="#accordionYears">
+                    <div class="accordion-body">
+                        <!-- Lista de materias para el año 3 -->
+                        <h4>Campo General</h4>
+                        <ul id="materias_General_A3"></ul>
+                        <h4>Campo del Fundamento</h4>
+                        <ul id="materias_Fundamento_A3"></ul>
+                        <h4>Campo Técnico Específico</h4>
+                        <ul id="materias_Tecnico_A3"></ul>
+                        <h4>Campo de la Práctica</h4>
+                        <ul id="materias_Practica_A3"></ul>
+                        <h5 id="totalHoras_A3"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Botones-->
+    <div class="container mt-5">
+        <h2 class="mt-5">¡Únete a Nosotros y Sé el Futuro de la Tecnología!</h2>
+        <a href="pdfs/analisis_de_sistemas.pdf" target="_blank" class="btn btn-primary">Descargar PDF</a>
+        <a href="formulario_analisis_de_sistemas.html" target="_blank" class="btn btn-primary">Formulario de
+            Inscripción</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>Dirección: [Dirección del instituto]</p>
+                    <p>Teléfono: [Número de teléfono]</p>
+                    <p>Email: [Correo electrónico]</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/instituto.superior.151/" target="_blank">Instagram</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/isft151" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (mismo que el index.html) -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function agregarMateria(ano, campo, numeroMateria, nombre, horas) {
+                const listaMaterias = document.getElementById(`materias_${campo}_A${ano}`);
+                const materiaElement = document.createElement('li');
+                materiaElement.id = `materia${numeroMateria}_${campo}_A${ano}`;
+                materiaElement.dataset.horas = horas;
+                materiaElement.textContent = `${nombre} (${horas} horas)`;
+                listaMaterias.appendChild(materiaElement);
+                recalcularTotalHoras(ano, campo);
+            }
+
+            function recalcularTotalHoras(ano) {
+                let totalHoras = 0;
+                ['General', 'Fundamento', 'Tecnico', 'Practica'].forEach(function (campo) {
+                    const materias = document.querySelectorAll(`#materias_${campo}_A${ano} li`);
+                    materias.forEach(function (materia) {
+                        totalHoras += parseInt(materia.dataset.horas);
+                    });
+                });
+                mostrarTotalHoras(ano, totalHoras);
+            }
+
+            function mostrarTotalHoras(ano, totalHoras) {
+                const totalHorasElement = document.getElementById(`totalHoras_A${ano}`);
+                totalHorasElement.textContent = `Total de horas: ${totalHoras} Horas`;
+            }
+
+            // Ejemplos de cómo agregar materias
+            // Materias de primer ano
+            agregarMateria(1, 'General', 1, 'Ingles 1', 64);
+            agregarMateria(1, 'General', 2, 'Ciencia Tecnologia y Sociedad', 64);
+            agregarMateria(1, 'Fundamento', 1, 'Analisis Matematico 1', 64);
+            agregarMateria(1, 'Fundamento', 2, 'Algebra', 64);
+            agregarMateria(1, 'Tecnico', 1, 'Algoritmos y Estructuras de Datos 1', 128);
+            agregarMateria(1, 'Tecnico', 2, 'Sistemas y Organizaciones', 64);
+            agregarMateria(1, 'Tecnico', 3, 'Arquitectura de Computadores', 64);
+            agregarMateria(1, 'Practica', 1, 'Practicas Profesionalizantes 1', 64);
+            // Total de horas de primer ano
+            recalcularTotalHoras(1);
+            // Materias de segundo ano
+            agregarMateria(2, 'General', 1, 'Ingles 2', 64);
+            agregarMateria(2, 'Fundamento', 1, 'Analisis matematico 2', 64);
+            agregarMateria(2, 'Fundamento', 2, 'Estadistica', 64);
+            agregarMateria(2, 'Tecnico', 1, 'Ingenieria de software 1', 64);
+            agregarMateria(2, 'Tecnico', 2, 'Algoritmos y estructura de datos 2', 128);
+            agregarMateria(2, 'Tecnico', 3, 'Sistemas Operativos', 64);
+            agregarMateria(2, 'Tecnico', 4, 'Base de datos', 64);
+            agregarMateria(2, 'Practica', 1, 'Practicas Profesionalizantes 2', 128);
+            // Total de horas de segundo ano
+            recalcularTotalHoras(2);
+            // Materias de tercer ano
+            agregarMateria(3, 'General', 1, 'Ingles 3', 64);
+            agregarMateria(3, 'Fundamento', 1, 'Aspectos generales de la profesion', 64);
+            agregarMateria(3, 'Tecnico', 1, 'Seminario de actualizacion', 64);
+            agregarMateria(3, 'Tecnico', 2, 'Redes y comunicaciones', 64);
+            agregarMateria(3, 'Tecnico', 3, 'Ingenieria de Software 1', 64);
+            agregarMateria(3, 'Tecnico', 4, 'Algoritmos y estructuras de datos 3', 128);
+            agregarMateria(3, 'Practica', 1, 'Practicas Profesionalizantes 3', 192);
+            // Total de horas de tercer ano
+            recalcularTotalHoras(3);
+        });
+    </script>
+
+</body>
+
+</html>

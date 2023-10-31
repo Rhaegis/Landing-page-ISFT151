@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ISFT 151</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      .navbar {
+        background-color: #6c757d;
+      }
+      .navbar-nav .nav-link {
+        color: #ffffff; /* Cambia el color del texto a blanco */
+      }
+    </style>
+  </head>
+  
+
+<body style="padding-top: 100px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <img src="img/new_logo.png" alt="ISFT 151" width="200" height="80">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
+          <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="centro_estudiantes.html">Centro de Estudiantes</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-5">
+        <h1>Formulario de Inscripción - Tecnicatura Superior en Acompañante Terapeutico</h1>
+        <form id="formularioAnalisisSistemas">
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Apellido -->
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+
+            <!-- DNI -->
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" class="form-control" id="dni" name="dni" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>Dirección: [Dirección del instituto]</p>
+                    <p>Teléfono: [Número de teléfono]</p>
+                    <p>Email: [Correo electrónico]</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/instituto.superior.151/" target="_blank">Instagram</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/isft151" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado para la validación y mensajes emergentes -->
+    <script>
+        $(document).ready(function () {
+            $("#formularioAnalisisSistemas").submit(function (event) {
+                event.preventDefault();
+
+                // Validar que todos los campos estén completos
+                var formValido = true;
+                $("#formularioAnalisisSistemas input").each(function () {
+                    if (!$(this).val()) {
+                        formValido = false;
+                        return false; // Detener el bucle si se encuentra un campo vacío
+                    }
+                });
+
+                if (formValido) {
+                    // Aquí puedes agregar código para enviar el formulario
+                    alert("Formulario enviado correctamente.");
+                } else {
+                    alert("Por favor, completa todos los campos.");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
